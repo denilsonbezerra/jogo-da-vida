@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+
+    <title>Jogo da Vida</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">Jogo da Vida</h1>
+    </header>
+
+    <main class="jogo">
+        <section class="alterar-dimensao">
+            <div class="inputs">
+                <label for="input-linhas">Linhas:</label>
+                <input type="number" id="input-linhas" min="10" max="20" value="20" inputmode="numeric">
+            </div>
+
+            <div class="inputs">
+                <label for="input-colunas">Colunas:</label>
+                <input type="number" id="input-colunas" min="10" max="75" value="75" inputmode="numeric">
+            </div>
+        </section>
+
+        <section class="jogo-da-vida">
+            <table id="tabuleiro"></table>
+        </section>
+
+        <section class="botoes">
+            <button id="btn-avancar" onclick="avancarGeracao()"><i class="fa-solid fa-arrow-right"></i> Avançar</button>
+            <button id="btn-iniciar" onclick="iniciarOuParar()"><i class="fa-solid fa-play"></i> Iniciar</button>
+            <button id="btn-limpar" onclick="limparTabuleiro()"><i class="fa-solid fa-x"></i> Limpar</button>
+        </section>
+    </main>
+</body>
+
+</html>
