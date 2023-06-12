@@ -72,27 +72,27 @@ html {
     background-color: #292F36;
 }
 
-#tabuleiro {
+.jogo .jogo-da-vida #tabuleiro {
     width: max-content;
     border-collapse: collapse;
     cursor: pointer;
 }
 
-#tabuleiro .celula {
+.jogo .jogo-da-vida #tabuleiro .celula {
     width: 20px;
     height: 20px;
     border: 1px solid #999999;
 }
 
-#tabuleiro .celula.viva {
+.jogo .jogo-da-vida #tabuleiro .celula.viva {
     background-color: #FFCE54;
 }
 
-#tabuleiro .celula.morta {
+.jogo .jogo-da-vida #tabuleiro .celula.morta {
     background-color: #FFFFFF;
 }
 
-.botoes {
+.jogo .botoes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,7 @@ html {
     background-color: #40B0A0;
 }
 
-.botoes button {
+.jogo .botoes button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,23 +118,23 @@ html {
     background-color: #4ECDC4;
 }
 
-.botoes button:nth-child(2) {
+.jogo .botoes button:nth-child(2) {
     width: 190px;
     height: 60px;
     font-size: 30px;
 }
 
-.botoes button:hover {
+.jogo .botoes button:hover {
     background-color: #43C0B3;
 }
 
-.botoes button:active {
+.jogo .botoes button:active {
     
     background-color: #2da89b;
 }
 
-.botoes button:disabled,
-.botoes button:disabled:hover {
+.jogo .botoes button:disabled,
+.jogo .botoes button:disabled:hover {
     cursor: default;
     opacity: 80%;
     background-color: #4ECDC4;
