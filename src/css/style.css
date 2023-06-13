@@ -49,7 +49,7 @@ html {
     color: #FFFFFF;
 }
 
-.jogo .alterar-dimensao .inputs input {
+.jogo .alterar-dimensao .inputs .input {
     width: 55px;
     padding-left: 8px;
     border: none;
@@ -59,7 +59,7 @@ html {
     background-color: #4ECDC4;
 }
 
-.jogo .alterar-dimensao .inputs input:disabled {
+.jogo .alterar-dimensao .inputs .input:disabled {
     opacity: 80%;
 }
 
@@ -72,23 +72,23 @@ html {
     background-color: #292F36;
 }
 
-.jogo .jogo-da-vida #tabuleiro {
+.jogo .jogo-da-vida .tabuleiro {
     width: max-content;
     border-collapse: collapse;
     cursor: pointer;
 }
 
-.jogo .jogo-da-vida #tabuleiro .celula {
+.jogo .jogo-da-vida .tabuleiro .celula {
     width: 20px;
     height: 20px;
     border: 1px solid #999999;
 }
 
-.jogo .jogo-da-vida #tabuleiro .celula.viva {
+.jogo .jogo-da-vida .tabuleiro .celula.viva {
     background-color: #FFCE54;
 }
 
-.jogo .jogo-da-vida #tabuleiro .celula.morta {
+.jogo .jogo-da-vida .tabuleiro .celula.morta {
     background-color: #FFFFFF;
 }
 
@@ -102,7 +102,7 @@ html {
     background-color: #40B0A0;
 }
 
-.jogo .botoes button {
+.jogo .botoes .botao {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,23 +118,23 @@ html {
     background-color: #4ECDC4;
 }
 
-.jogo .botoes button:nth-child(2) {
+.jogo .botoes .botao:nth-child(2) {
     width: 190px;
     height: 60px;
     font-size: 30px;
 }
 
-.jogo .botoes button:hover {
+.jogo .botoes .botao:hover {
     background-color: #43C0B3;
 }
 
-.jogo .botoes button:active {
+.jogo .botoes .botao:active {
     
     background-color: #2da89b;
 }
 
-.jogo .botoes button:disabled,
-.jogo .botoes button:disabled:hover {
+.jogo .botoes .botao:disabled,
+.jogo .botoes .botao:disabled:hover {
     cursor: default;
     opacity: 80%;
     background-color: #4ECDC4;
