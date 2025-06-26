@@ -1,37 +1,43 @@
-# Jogo da Vida
+# Jogo da Vida - John Conway 🧬
 
-O Jogo da Vida é um programa que simula uma população de células seguindo regras simples de interação. O projeto foi implementado utilizando HTML, CSS e JavaScript.
+Este projeto implementa o **Jogo da Vida** de Conway, utilizando HTML, CSS e JavaScript. O objetivo foi explorar **simulações visuais com base em lógica de vizinhança e ciclos automáticos**, além de criar uma interface interativa.
 
-## Funcionalidades
+## 🔍 Sobre o Jogo
 
-O Jogo da Vida possui as seguintes funcionalidades:
+O jogo é uma simulação em grade onde células "vivem" ou "morrem" em cada geração com base em regras fixas.
 
-- Configuração do tamanho do tabuleiro
-- Inicialização e pausa da simulação
-- Avanço manual para a próxima geração
-- Limpeza do tabuleiro
+### 📜 Regras:
 
-## Regras
+1. Células com menos de 2 vizinhos vivos morrem (solidão).
+2. Células com 2 ou 3 vizinhos vivem para a próxima geração.
+3. Células com mais de 3 vizinhos morrem (superpopulação).
+4. Células mortas com exatamente 3 vizinhos vivos tornam-se vivas (nascimento).
 
-- Qualquer espaço vazio com exatamente três vizinhos vivos se torna uma célula viva.
-- Qualquer célula viva com menos de dois vizinhos vivos morre de solidão.
-- Qualquer célula viva com mais de três vizinhos vivos morre de superpopulação.
-- Qualquer célula viva com dois ou três vizinhos vivos continua viva para a próxima geração.
+## 🛠️ Funcionalidades Implementadas
 
-## Como jogar
+- Geração de tabuleiro dinâmico com tamanho configurável
+- Inicialização de células vivas manualmente
+- Botão de iniciar/pausar a simulação automática
+- Avanço manual de geração (modo step)
+- Botão de limpar/resetar o tabuleiro
 
-1. Acesse o link do site clicando [aqui](https://denilsonbezerra.github.io/jogo-da-vida/).
-2. Você pode configurar o tamanho do tabuleiro, ajustando o número de linhas e colunas nos respectivos campos.
-3. Selecione no tabuleiro os espaços que deseja colocar célular vivas inicialmente.
-4. Clique em "Iniciar" para iniciar a simulação automática do jogo. Cada célula evoluirá de acordo com as regras estabelecidas.
-5. Clique em "Pausar" caso queira interferir na evolução das gerações e adicionar mais célular.
-- Para avançar manualmente para a próxima geração, clique em "Avançar" (só funciona enquanto o jogo estiver parado).
-- Para limpar o tabuleiro e reiniciar o jogo, clique em "Limpar".
+## 💻 Tecnologias
 
-## Licença
+- HTML para estrutura da interface
+- CSS para estilo do tabuleiro e layout
+- JavaScript para lógica do jogo e interação
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais informações.
+## 🎮 Como utilizar
 
-## Créditos
+1. Defina o número de linhas e colunas do tabuleiro.
+2. Marque as células que deseja deixar vivas inicialmente.
+3. Clique em **Iniciar** para iniciar a simulação.
+4. Use os botões **Pausar**, **Avançar** ou **Limpar** para controlar o jogo.
 
-O Jogo da Vida foi desenvolvido com base no conceito original proposto por John Conway em 1970.
+## 🧠 Aprendizados
+
+- Manipulação de matrizes bidimensionais no JS
+- Aplicação de lógica condicional baseada em vizinhos
+- Interatividade com eventos e timers (`setInterval`)
+
+📢 Projeto desafiador e excelente para consolidar **algoritmos de vizinhança** e **simulações visuais** com JavaScript.
